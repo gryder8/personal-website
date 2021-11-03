@@ -6,6 +6,7 @@
 
 .heading {
   color: rebeccapurple;
+  font-size: 50px;
 }
 .nav-links {
   display: flex;

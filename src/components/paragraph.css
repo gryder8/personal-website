@@ -1,0 +1,9 @@
+.main-text {
+    color: #0a0909; 
+    font-family: 'Helvetica Neue', serif; 
+    font-size: 25px; 
+    width: fit-content; 
+    font-weight: normal; 
+    line-height: 60px; 
+    margin: 0; 
+}

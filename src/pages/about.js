@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import { mainText } from "../components/paragraph.css";
 
 
 const AboutPage = () => {
     return (
         <Layout pageTitle = "About Me">
-            <p>Hey there, I'm Gavin. I'm a student at Santa Clara University in California studying Computer Science and Engineering.</p>
+            <h1 className={mainText}>Hey there, I'm Gavin. I'm a student at Santa Clara University studying Computer Science and Engineering.</h1>
         </Layout>
     )
 }
