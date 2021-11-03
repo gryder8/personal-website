@@ -6,7 +6,7 @@ import { topleft } from  "../components/alignment.css";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Gavin Ryder" classname = {topleft}>
+    <Layout pageTitle="Home" classname = {topleft}>
       <p>Welcome to my website!</p>
     </Layout>
   );
