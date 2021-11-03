@@ -33,10 +33,7 @@ const Layout = ({ pageTitle, children }) => {
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <button
-              onClick={() => navigate("/")}
-              className={gradientButton}
-            >
+            <button onClick={() => navigate("/")} className={gradientButton}>
               Home
             </button>
           </li>
@@ -52,6 +49,17 @@ const Layout = ({ pageTitle, children }) => {
             <LinkButton className={gradientButton}>
               <a href={resume} download="GavinRyderResume">
                 Resume
+              </a>
+            </LinkButton>
+          </li>
+          <li className={navLinkItem}>
+            <LinkButton className={gradientButton}>
+              <a
+                href="https://www.github.com/gryder8"
+                target="_blank"
+                rel="noopener norefferer"
+              >
+                GitHub
               </a>
             </LinkButton>
           </li>
