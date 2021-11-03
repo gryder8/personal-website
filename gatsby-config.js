@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/personal-website",
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "Gavin Ryder's Personal Website",
@@ -10,7 +11,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-          displayName: false
+        displayName: false,
       },
     },
   ],
