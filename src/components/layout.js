@@ -1,28 +1,59 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
+import resume from "../downloads/resume.pdf"; 
+
 import {
   container,
   heading,
   navLinks,
   navLinkItem,
   navLinkText,
+  gradientButton,
 } from "./layout.module.css";
+import styled from "styled-components";
+
+const MainSiteTitle = styled.h1`
+  font-size: 60px;
+  background: linear-gradient(to right, #f4822a, #f8c464);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1px;
+`;
+
+
+
+const LinkButton = styled.button`
+  color: #0000ff;
+`;
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
-      <title>{pageTitle}</title>
+      <MainSiteTitle>{"Gavin Ryder"}</MainSiteTitle>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
+            <button
+              onClick={() => navigate("/")}
+              className={gradientButton}
+            >
               Home
-            </Link>
+            </button>
           </li>
           <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-              About
-            </Link>
+            <button
+              onClick={() => navigate("/about")}
+              className={gradientButton}
+            >
+              About Me
+            </button>
+          </li>
+          <li className={navLinkItem}>
+            <LinkButton className={gradientButton}>
+              <a href={resume} download="GavinRyderResume">
+                Resume
+              </a>
+            </LinkButton>
           </li>
         </ul>
       </nav>
