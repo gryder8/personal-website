@@ -7,14 +7,14 @@ import { overlay } from "../components/background.css";
 
 const IndexPage = () => {
   return (
-    <div className={overlay}>
+    //<div className={overlay}>
       <Layout pageTitle="Home">
         <h1 className={mainText}>
           Welcome to my website! Click the buttons above to visit my GitHub,
           download my resume, or read a little about me!
         </h1>
       </Layout>
-    </div>
+    //</div>
   );
 };
 

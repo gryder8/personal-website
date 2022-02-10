@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, navigate } from "gatsby";
-import resume from "../downloads/resume.pdf"; 
+import websiteresume from "../downloads/websiteresume.pdf"; 
 
 import {
   container,
@@ -14,6 +14,14 @@ import styled from "styled-components";
 
 const MainSiteTitle = styled.h1`
   font-size: 60px;
+  background: linear-gradient(to right, #f4822a, #f8c464);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1px;
+`;
+
+const SectionHeader = styled.h1`
+  font-size: 40px;
   background: linear-gradient(to right, #f4822a, #f8c464);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -47,7 +55,7 @@ const Layout = ({ pageTitle, children }) => {
           </li>
           <li className={navLinkItem}>
             <LinkButton className={gradientButton}>
-              <a href={resume} download="GavinRyderResume">
+              <a href={websiteresume} download="GavinRyderResume">
                 Resume
               </a>
             </LinkButton>
