@@ -4,8 +4,5 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+ My Personal Website, made with Gatsby.js
 </h1>
-
-
-**My Personal Website, made with Gatsby.js**
